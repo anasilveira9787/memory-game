@@ -1,0 +1,57 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: aquamarine;
+    color: black;
+    display: grid;
+    place-items: center;
+}
+
+#main {
+    background-color: aliceblue;
+    border-radius: 10px;
+    width: 700px;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+
+#game {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 25% 25% 25% 25%;
+    place-items: center;
+    width: fit-content;
+}
+
+.card {
+    background-color: blueviolet;
+    border-radius: 10px;
+    width: 120px;
+    height: 120px;
+    cursor: pointer;
+    font-size: 6rem;
+    color: #ffffff;
+    justify-content: center;
+    font-weight: 700;
+    align-items: center;
+    display: flex;
+}
+
+.isSameContent {
+    cursor: not-allowed;
+    background-color: rgb(57, 11, 101);
+    
+}
