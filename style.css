@@ -48,10 +48,14 @@ body {
     font-weight: 700;
     align-items: center;
     display: flex;
+    transition: scale .2s;
+}
+
+.card:hover {
+    scale: 1.1;
 }
 
 .isSameContent {
     cursor: not-allowed;
     background-color: rgb(57, 11, 101);
-    
 }

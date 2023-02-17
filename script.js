@@ -1,8 +1,29 @@
 
+let cardList = ['1','2','3','4','5','6','1','2','3','4','5','6']
 let cards = document.querySelectorAll('.card')
+
 let card1 = 0
 let card2 = 0
-console.log(cards);
+
+
+function setCards() {  
+
+    for (var i = 0; i < cards.length; i++) {
+        const randomNumber = Math.floor(Math.random() * cardList.length);
+        cards[i].innerText = cardList[randomNumber];
+        cardList = cardList.splice(randomNumber, 1)
+        // more statements
+     }
+
+}
+
+
+setCards()
+
+console.log("cardList" + cardList);
+console.log("cards" + cards);
+
+
 
 cards.forEach(card => {
     card.addEventListener('click', () => compareCards(card))    
