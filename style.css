@@ -34,6 +34,19 @@ body {
     grid-template-columns: 25% 25% 25% 25%;
     place-items: center;
     width: fit-content;
+    position: relative;
+}
+
+.cover {
+    background-color: rgb(189, 13, 160);
+    border-radius: 10px;
+    width: 120px;
+    height: 120px;
+    cursor: pointer;
+    transition: scale .2s;
+    position:relative;
+    z-index: 10;
+    
 }
 
 .card {
@@ -49,13 +62,15 @@ body {
     align-items: center;
     display: flex;
     transition: scale .2s;
+    opacity: 0;
 }
 
-.card:hover {
+.card:hover, .cover:hover  {
     scale: 1.1;
 }
 
 .isSameContent {
+    opacity: 1;
     cursor: not-allowed;
     background-color: rgb(57, 11, 101);
 }
